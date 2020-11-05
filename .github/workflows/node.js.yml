@@ -26,4 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-     working-directory: D:\projects\react-test\buildpath
+    - working-directory: D:\projects\react-test\buildpath
