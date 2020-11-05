@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-     with:
+       with:
  # **Relative path** under $GITHUB_WORKSPACE to place the repository
     path: 'D:\projects\react-test\buildpath'
     - name: Use Node.js ${{ matrix.node-version }}
@@ -30,4 +30,5 @@ jobs:
     - run: npm i
     - run: | 
             npm run build 
+            postbuild: "mv build ../"
          
