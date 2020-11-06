@@ -25,7 +25,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-    - run: | 
-            npm run build 
-            postbuild: "mv build ../"
-         
+    - run: npm run build
+    - run: copy D:\projects\react-test\actions-runner\deploye\react-test\react-test\build\*  D:\projects\react-test\buildpath
