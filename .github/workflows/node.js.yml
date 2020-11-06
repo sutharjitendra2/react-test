@@ -26,4 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-    - run: copy D:\projects\react_test\actions-runner\deploye\react_test\react-test\build\*  D:\projects\react_test\buildpath -Force
+    - run: copy D:\projects\react_test\actions-runner\deploye\react_test\react-test\build\*  D:\projects\react_test\buildpath -Force -Recurse
