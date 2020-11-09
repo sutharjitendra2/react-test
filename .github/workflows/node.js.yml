@@ -26,4 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-    - run: cp -r /var/www/html/jitendra/actions-runner/react-test/react-test/react-test/build/* /var/www/html/jitendra/react-test/
+    - run: cp -r /var/www/html/jitendra/actions-runner/react-test/react-test/react-test/build/* /var/www/html/cms/react-test/
